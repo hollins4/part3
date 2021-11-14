@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const uniqueValidator = require('mongoose-unique-validator')
 
 
 
@@ -15,13 +14,13 @@ const url =
     `mongodb+srv://fullstack:${password}@cluster0.xgigt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 mongoose.connect(url)
-
+/*
 const personSchema = new mongoose.Schema({
     name: { type: String, required: true, unique: true },
     number: String,
 })
 
-personSchema.plugin(uniqueValidator)
+
   
 const Person = mongoose.model('Person', personSchema)
 
@@ -84,5 +83,5 @@ if (process.argv.length === 3) {
     })
 }
 
-
+*/
 
